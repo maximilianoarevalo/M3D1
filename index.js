@@ -17,6 +17,7 @@ function disminuirProducto(){
     let cantidadActual = parseInt(cantidad);
     // Si bien no se exige la validacion para una cantidad de productos negativa, creo que es necesario agregar la validacion
     if(cantidadActual === 0){
+        alert('La cantidad de productos no puede ser negativa.');
         cantidad = 0;
         document.querySelector(".cantidad").innerHTML = cantidad;
     }else{
